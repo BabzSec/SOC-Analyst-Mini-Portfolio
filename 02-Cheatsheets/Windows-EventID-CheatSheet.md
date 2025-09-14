@@ -1,5 +1,5 @@
 # 🔍 Windows Security Event ID Cheat Sheet
-> by **BabzSec** — part of [SOC-Analyst-Mini-Portfolio](https://github.com/BabzSec/SOC-Analyst-Mini-Portfolio)
+> by **BabzSec** — part of [SOC-Analyst-Mini-Portfolio](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio)
 
 > 🎯 Quick reference for common Windows Event IDs — perfect for Splunk, Microsoft Defender, or any SOC investigation.
 
