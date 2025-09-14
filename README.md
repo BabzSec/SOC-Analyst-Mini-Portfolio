@@ -19,10 +19,10 @@ It contains:
 ## 📂 Contents
 | Section | Description |
 |---------|-------------|
-| [**Splunk/**](https://github.com/BabzSec/SOC-Analyst-Mini-Portfolio/tree/main/Splunk) | Dashboards, reports, and searches (e.g., failed login monitoring, PowerShell detection) |
-| [**Cheatsheets/**](https://github.com/BabzSec/SOC-Analyst-Mini-Portfolio/tree/main/Cheatsheets) | Windows Security Event ID cheat sheet and other quick references |
-| [**Microsoft-Defender/**](https://github.com/BabzSec/SOC-Analyst-Mini-Portfolio/tree/main/Microsoft-Defender) | (Planned) Incident response & alert investigations |
-| [**Screenshots/**](https://github.com/BabzSec/SOC-Analyst-Mini-Portfolio/tree/main/Screenshots) | Visual evidence of dashboards, queries, and reports |
+| [**Splunk/**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/Splunk) | Dashboards, reports, and searches (e.g., failed login monitoring, PowerShell detection) |
+| [**Cheatsheets/**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/Cheatsheets) | Windows Security Event ID cheat sheet and other quick references |
+| [**Microsoft-Defender/**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/Microsoft-Defender) | (Planned) Incident response & alert investigations |
+| [**Screenshots/**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/Screenshots) | Visual evidence of dashboards, queries, and reports |
 
 ---
 
@@ -40,8 +40,8 @@ It contains:
 ---
 
 ## 📧 Contact
-- **Email:** [babzinfosec@gmail.com](mailto:babzinfosec@gmail.com)  
-- **GitHub:** [BabzSec](https://github.com/BabzSec)
+- **Email:** [BlueWardRix@gmail.com](mailto:BlueWardRix@gmail.com)  
+- **GitHub:** [BlueWardRix](https://github.com/BlueWardRix)
 
 > Feel free to reach out if you’d like to discuss my work or opportunities in SOC / cybersecurity.
 
