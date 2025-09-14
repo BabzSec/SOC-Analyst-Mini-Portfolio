@@ -19,10 +19,10 @@ It contains:
 ## 📂 Contents
 | Section | Description |
 |---------|-------------|
-| [**Splunk/**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/Splunk) | Dashboards, reports, and searches (e.g., failed login monitoring, PowerShell detection) |
-| [**Cheatsheets/**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/Cheatsheets) | Windows Security Event ID cheat sheet and other quick references |
-| [**Microsoft-Defender/**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/Microsoft-Defender) | (Planned) Incident response & alert investigations |
-| [**Screenshots/**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/Screenshots) | Visual evidence of dashboards, queries, and reports |
+| [**Splunk/**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/01-Splunk) | Dashboards, reports, and searches (e.g., failed login monitoring, PowerShell detection) |
+| [**Cheatsheets/**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/02-Cheatsheets) | Windows Security Event ID cheat sheet and other quick references |
+| [**Microsoft-Defender/**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/03-Microsoft-Defender) | (Planned) Incident response & alert investigations |
+| [**Screenshots/**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/04-Screenshots) | Visual evidence of dashboards, queries, and reports |
 
 ---
 
