@@ -29,7 +29,7 @@ It contains:
 ## 🖼️ Screenshots
 
 ### Top Security Event Codes
-![Security Event Codes](04-Screenshots/Security_Event_Codes.png)
+![Security Event Codes](04-Screenshots/Security Event Codes.png)
 
 ### Failed Logins Detection
 ![Failed Logins](04-Screenshots/failed_logins.png)
