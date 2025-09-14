@@ -41,7 +41,7 @@ It contains:
 ![PowerShell Detection](04-Screenshots/04-Powershell_detect.png)
 
 ### Splunk Dashboard Overview
-![Dashboard](04-Screenshots/05-dashboard_overview.png)
+![Dashboard](04-Screenshots/05-Dashboard_overview.png)
 
 ---
 
