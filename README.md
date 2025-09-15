@@ -40,8 +40,14 @@ It contains:
 ### PowerShell Activity Detection
 ![PowerShell Detection](04-Screenshots/Dashboards/04-Powershell_detect.png)
 
-### Splunk Dashboard Overview
-![Dashboard](04-Screenshots/Dashboards/05-Dashboard_overview.png)
+### Brute-Force Login Alert
+![Brute Force Alert](Screenshots/Alerts/Brute_force_alert.png)
+
+### PowerShell Script Execution Alert
+![PowerShell Alert](Screenshots/Alerts/Powershell_alert.png)
+
+### Privilege Escalation Alert
+![Privilege Escalation Alert](Screenshots/Alerts/Privilege_escalation_alert.png)
 
 ---
 
