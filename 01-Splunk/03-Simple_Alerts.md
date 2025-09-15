@@ -1,80 +1,92 @@
-# 🚨 Splunk Alerts – Windows Events Monitoring
+# 🚨 Splunk Alerts
 
-This file documents the alerts configured in Splunk for the **Windows Events** lab.  
-Each alert is designed to demonstrate how a SOC analyst can automate detections and quickly respond to suspicious activity.
+This document summarizes the alerts configured in Splunk for the SOC Analyst Mini-Portfolio, including lab-friendly and real-world scenarios.
 
 ---
 
-## 1️⃣ Brute-Force Login Detection
+## 1️⃣ Brute-Force Login Detection (Scheduled)
 
 Detects repeated failed login attempts, which could indicate password guessing or brute-force attacks.
 
-- **SPL (Lab Version):**
+- **SPL:**
 ```spl
 index=* EventCode=4625
 ```
 
-- **Alert Settings (Lab Version):**
+- **Lab Version (Testing Only):**
   - **Time Range:** Last 3 minutes  
   - **Schedule:** Run every 1 minute  
-  - **Trigger Condition:** Number of Results > 0 (i.e., any failed login detected)  
-  - **Notes:** Threshold is effectively 3 attempts in 3 minutes for testing purposes — avoids locking Windows accounts.
+  - **Trigger Condition:** Number of Results > 0  
+  - **Threshold:** 3 failed attempts in 3 minutes  
+  - **Notes:** Prevents locking test accounts during lab exercises.
 
-- **Recommended Real-World Settings:**
-  - **SPL:** Same as above  
+- **Real-World Version:**
   - **Time Range:** Last 10–15 minutes  
   - **Schedule:** Run every 5–15 minutes (cron: `*/5 * * * *`)  
   - **Trigger Condition:** Account/IP with ≥5–10 failed logins  
-  - **Notes:** Adjust threshold and time window based on environment size and security policy.  
+  - **Notes:** Thresholds and time windows should be adapted to environment size and security policy.
 
-- **Actions:** Add to *Triggered Alerts*, optionally send email.  
-- **Tips:**  
-  - Exclude known safe accounts or service accounts to reduce false positives.  
-  - Use `stats count by Account_Name, src_ip | where count >= 5` in production for precise counting.
+- **Screenshot:**  
+![Brute Force Alert](../04-Screenshots/Alerts/02-Brute_Force_Login_Detection.png)
 
 ---
 
-## 2️⃣ PowerShell Script Execution
+## 2️⃣ PowerShell Script Execution Alert (Real-Time)
 
-Alerts whenever a PowerShell script block is logged (EventCode `4104`).  
-This helps spot suspicious script activity, such as encoded commands.
+Detects potentially malicious or suspicious PowerShell activity.
 
 - **SPL:**
-  ```spl
-  index=wineventlog EventCode=4104
-  ```
-- **Trigger Condition:** Any result (1+ event) in the last 15 minutes.  
-- **Actions:** Add to *Triggered Alerts*.  
-- **Notes:**  
-  - Requires PowerShell Script Block Logging enabled.  
-  - Consider adding filters (e.g., `NOT CommandLine="Get-Help*"`) to reduce noise.
+```spl
+index=wineventlog 4104
+```
+
+- **Lab Version:**
+  - **Time Range:** Real-time (per event)  
+  - **Schedule:** Real-Time alert  
+  - **Trigger Condition:** Number of Results > 0  
+  - **Notes:** Captures PowerShell script execution in lab environment for demonstration.
+
+- **Real-World Version:**
+  - **Time Range:** Real-time  
+  - **Schedule:** Real-Time alert  
+  - **Trigger Condition:** Any PowerShell script execution that matches known suspicious patterns  
+  - **Notes:** Filters can be applied to reduce false positives, e.g., exclude trusted admin scripts.
+
+- **Screenshot:**  
+![PowerShell Alert](../04-Screenshots/Alerts/03-PowerShell_Alerts.png)
 
 ---
 
-## 3️⃣ Privilege Escalation (Special Privileges Assigned)
+## 3️⃣ Privilege Escalation (Special Privileges Assigned) (Real-Time)
 
-Watches for EventCode `4672` (Special privileges assigned to new logon).  
-Useful to detect when non-admin accounts receive elevated privileges.
+Detects accounts granted administrative or special privileges (EventCode 4672).
 
 - **SPL:**
-  ```spl
-  index=main EventCode=4672
-  | search Account_Name!="SYSTEM"
-  ```
-- **Trigger Condition:** Any result (1+ event) in the last 15 minutes.  
-- **Actions:** Add to *Triggered Alerts*.  
-- **Notes:**  
-  - Exclude built-in service accounts (`SYSTEM`, `LOCAL SERVICE`) to avoid noise.  
-  - Combine with logon type events (4624) for deeper investigations.
+```spl
+index=main EventCode=4672
+| search Account_Name!="SYSTEM"
+```
+
+- **Lab Version:**
+  - **Time Range:** Real-time  
+  - **Schedule:** Real-Time alert  
+  - **Trigger Condition:** Number of Results > 0  
+  - **Notes:** Monitors admin logins in lab without flooding alerts for SYSTEM account.
+
+- **Real-World Version:**
+  - **Time Range:** Real-time  
+  - **Schedule:** Real-Time alert  
+  - **Trigger Condition:** Any account granted special privileges  
+  - **Notes:** Exclude service accounts or known automated logins if necessary to reduce noise.
+
+- **Screenshot:**  
+![Privilege Escalation Alert](../04-Screenshots/Alerts/04-Privilege_Escalation.png)
 
 ---
 
-### 💡 General Tips for Splunk Alerts
-- ⏱️ **Set an Appropriate Time Window:** Match your search to how fast incidents can happen (e.g., 5–15 min).  
-- 📥 **Delivery Options:** If email isn’t available, use “Triggered Alerts” and export results later.  
-- 🔍 **Tune for False Positives:** Start with broad rules, then add filters to reduce noise.  
-- 🧠 **Think Like an Attacker:** Consider what unusual events you’d create if you were trying to break in — then write an alert for that!
-
----
-
-> These alerts use **lab-generated data** for learning purposes. In production, thresholds and filters should be tuned to the specific environment.
+### 💡 Tips for All Alerts
+- Exclude known safe accounts or service accounts to reduce false positives.  
+- Use **Splunk lookup tables** for whitelisting trusted IPs or users.  
+- Adjust thresholds and time windows based on **environment size** and **risk tolerance**.  
+- For lab demonstrations, keep time ranges and thresholds short to generate visible results quickly.  
+- Use **real-time alerts** for single-event detections and **scheduled alerts** for cumulative events like brute-force attacks.
