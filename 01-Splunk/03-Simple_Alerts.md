@@ -4,7 +4,12 @@ This document summarizes the alerts configured in Splunk for the SOC Analyst Min
 
 ---
 
-## 1️⃣ Brute-Force Login Detection (Scheduled)
+### 1️⃣ Alert Rules Overview
+![Alert Rules Overview](../04-Screenshots/Alerts/01-Alert_Rules.png)
+
+---
+
+## 2️⃣ Brute-Force Login Detection (Scheduled)
 
 Detects repeated failed login attempts, which could indicate password guessing or brute-force attacks.
 
@@ -16,8 +21,7 @@ index=* EventCode=4625
 - **Lab Version (Testing Only):**
   - **Time Range:** Last 3 minutes  
   - **Schedule:** Run every 1 minute  
-  - **Trigger Condition:** Number of Results > 0  
-  - **Threshold:** 3 failed attempts in 3 minutes  
+  - **Trigger Condition:** Number of Results >= 3  
   - **Notes:** Prevents locking test accounts during lab exercises.
 
 - **Real-World Version:**
@@ -31,7 +35,7 @@ index=* EventCode=4625
 
 ---
 
-## 2️⃣ PowerShell Script Execution Alert (Real-Time)
+## 3️⃣ PowerShell Script Execution Alert (Real-Time)
 
 Detects potentially malicious or suspicious PowerShell activity.
 
@@ -43,7 +47,7 @@ index=wineventlog 4104
 - **Lab Version:**
   - **Time Range:** Real-time (per event)  
   - **Schedule:** Real-Time alert  
-  - **Trigger Condition:** Number of Results > 0  
+  - **Trigger Condition:** Any PowerShell script execution that matches known suspicious patterns
   - **Notes:** Captures PowerShell script execution in lab environment for demonstration.
 
 - **Real-World Version:**
@@ -57,7 +61,7 @@ index=wineventlog 4104
 
 ---
 
-## 3️⃣ Privilege Escalation (Special Privileges Assigned) (Real-Time)
+## 4️⃣ Privilege Escalation (Special Privileges Assigned) (Real-Time)
 
 Detects accounts granted administrative or special privileges (EventCode 4672).
 
@@ -70,7 +74,7 @@ index=main EventCode=4672
 - **Lab Version:**
   - **Time Range:** Real-time  
   - **Schedule:** Real-Time alert  
-  - **Trigger Condition:** Number of Results > 0  
+  - **Trigger Condition:** Any account granted special privileges  
   - **Notes:** Monitors admin logins in lab without flooding alerts for SYSTEM account.
 
 - **Real-World Version:**
@@ -84,10 +88,6 @@ index=main EventCode=4672
 
 ---
 
-### Alert Rules Overview
-![Alert Rules Overview](../04-Screenshots/Alerts/01-Alert_Rules.png)
-
----
 ### 💡 Tips for All Alerts
 - Exclude known safe accounts or service accounts to reduce false positives.  
 - Use **Splunk lookup tables** for whitelisting trusted IPs or users.  
