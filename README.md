@@ -29,19 +29,19 @@ It contains:
 ## 🖼️ Screenshots
 
 ### Top Security Event Codes
-![Security Event Codes](04-Screenshots/01-Security_Event_Codes.png)
+![Security Event Codes](04-Screenshots/Dashboards/01-Security_Event_Codes.png)
 
 ### Failed Logins Detection
-![Failed Logins](04-Screenshots/02-Failed_logins.png)
+![Failed Logins](04-Screenshots/Dashboards/02-Failed_logins.png)
 
 ### Admin / Privileged Actions
-![Admin & Privileged Actions](04-Screenshots/03-Admin_-_Privileged_Actions.png)
+![Admin & Privileged Actions](04-Screenshots/Dashboards/03-Admin_&_Privileged_Actions.png)
 
 ### PowerShell Activity Detection
-![PowerShell Detection](04-Screenshots/04-Powershell_detect.png)
+![PowerShell Detection](04-Screenshots/Dashboards/04-Powershell_detect.png)
 
 ### Splunk Dashboard Overview
-![Dashboard](04-Screenshots/05-Dashboard_overview.png)
+![Dashboard](04-ScreenshotsDashboards//05-Dashboard_overview.png)
 
 ---
 
