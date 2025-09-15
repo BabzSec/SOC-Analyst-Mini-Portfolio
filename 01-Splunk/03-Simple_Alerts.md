@@ -84,6 +84,10 @@ index=main EventCode=4672
 
 ---
 
+### Alert Rules Overview
+![Alert Rules Overview](../04-Screenshots/Alerts/01-Alert_Rules.png)
+
+---
 ### 💡 Tips for All Alerts
 - Exclude known safe accounts or service accounts to reduce false positives.  
 - Use **Splunk lookup tables** for whitelisting trusted IPs or users.  
