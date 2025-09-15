@@ -64,14 +64,17 @@ These alerts are configured in Splunk to automatically detect suspicious activit
 > These alerts demonstrate practical SOC workflows: detecting, correlating, and responding to security events in a lab environment.
 ---
 
+### Alert Rules Overview
+![Alert Rules](04-Screenshots/Alerts/01-Alert_Rules.png)
+
 ### Brute-Force Login Alert
-![Brute Force Alert](Screenshots/Alerts/Brute_force_alert.png)
+![Brute Force Alert](04-Screenshots/Alerts/02-Brute_Force_Login_Detection.png)
 
 ### PowerShell Script Execution Alert
-![PowerShell Alert](Screenshots/Alerts/Powershell_alert.png)
+![PowerShell Alert](04-Screenshots/Alerts/03-PowerShell_Alerts.png)
 
 ### Privilege Escalation Alert
-![Privilege Escalation Alert](Screenshots/Alerts/Privilege_escalation_alert.png)
+![Privilege Escalation Alert](04-Screenshots/Alerts/04-Privilege_Escalation.png)
 
 ---
 
