@@ -10,16 +10,18 @@ Each alert is designed to demonstrate how a SOC analyst can automate detections 
 Detects repeated failed login attempts, which could indicate password guessing or brute-force attacks.
 
 - **SPL:**
-  ```spl
-  index=* EventCode=4625
-  | stats count by Account_Name, src_ip
-  | where count >= 5
-  ```
-- **Trigger Condition:** `count >= 5` failed logins for the same `Account_Name` or `src_ip` within 10 minutes.  
+```spl
+index=* EventCode=4625
+| stats count by Account_Name, src_ip
+| where count >= 3   /* Lab setting: 3 attempts in 1 minute to avoid locking Windows accounts */
+```
+
+- **Trigger Condition:** ≥3 failed logins per user/IP within the last 1 minute (lab setting).  
+- **Recommended Real-World Setting:** ≥5–10 failed logins per user/IP within 10–15 minutes.  
 - **Actions:** Add to *Triggered Alerts* (optional email if SMTP is configured).  
 - **Notes:**  
-  - Adjust the threshold (`>=5`) based on environment size.  
-  - Use a narrower `index` or add `host=` if you have multiple data sources.
+  - Adjust threshold based on environment size and security policy.  
+  - Narrow index or add `host=` if monitoring multiple data sources.
 
 ---
 
