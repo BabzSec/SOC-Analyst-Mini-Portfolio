@@ -27,6 +27,17 @@ It contains:
 ---
 
 ## 🖼️ Screenshots
+---
+
+## 🔍 Searching & Detecting
+---
+Before configuring alerts, I performed detailed log analysis in Splunk to identify suspicious activities and validate thresholds:
+
+- **Failed Logins:** Tracked repeated failed logins per user/workstation (EventCode 4625).  
+- **Privilege / Admin Actions:** Monitored EventCode 4672 to detect privilege escalation.  
+- **PowerShell Activity:** Monitored EventCodes 4103 & 4104 to detect script execution.
+
+---
 
 ### Top Security Event Codes
 ![Security Event Codes](04-Screenshots/Dashboards/01-Security_Event_Codes.png)
@@ -39,6 +50,19 @@ It contains:
 
 ### PowerShell Activity Detection
 ![PowerShell Detection](04-Screenshots/Dashboards/04-Powershell_detect.png)
+
+---
+
+### 🚨 Alert Screenshots
+---
+These alerts are configured in Splunk to automatically detect suspicious activities based on the log analysis performed in the Searching & Detecting phase.  
+
+- **Brute-Force Login Alert:** Monitors repeated failed login attempts to identify potential account compromise.  
+- **PowerShell Script Execution Alert:** Detects potentially malicious or suspicious PowerShell activity.  
+- **Privilege Escalation Alert:** Flags administrative or special privilege logins for closer investigation.  
+
+> These alerts demonstrate practical SOC workflows: detecting, correlating, and responding to security events in a lab environment.
+---
 
 ### Brute-Force Login Alert
 ![Brute Force Alert](Screenshots/Alerts/Brute_force_alert.png)
