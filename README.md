@@ -40,16 +40,16 @@ Before configuring alerts, I performed detailed log analysis in Splunk to identi
 ---
 
 ### Top Security Event Codes
-![Security Event Codes](04-Screenshots/Dashboards/01-Security_Event_Codes.png)
+![Security Event Codes](04-Screenshots/Splunk/Dashboards/01-Security_Event_Codes.png)
 
 ### Failed Logins Detection
-![Failed Logins](04-Screenshots/Dashboards/02-Failed_logins.png)
+![Failed Logins](04-Screenshots/Splunk/Dashboards/02-Failed_logins.png)
 
 ### Admin / Privileged Actions
-![Admin & Privileged Actions](04-Screenshots/Dashboards/03-Admin_&_Privileged_Actions.png)
+![Admin & Privileged Actions](04-Screenshots/Splunk/Dashboards/03-Admin_&_Privileged_Actions.png)
 
 ### PowerShell Activity Detection
-![PowerShell Detection](04-Screenshots/Dashboards/04-Powershell_detect.png)
+![PowerShell Detection](04-Screenshots/Splunk/Dashboards/04-Powershell_detect.png)
 
 ---
 
@@ -65,16 +65,16 @@ These alerts are configured in Splunk to automatically detect suspicious activit
 ---
 
 ### Alert Rules Overview
-![Alert Rules](04-Screenshots/Alerts/01-Alert_Rules.png)
+![Alert Rules](04-Screenshots/Splunk/Alerts/01-Alert_Rules.png)
 
 ### Brute-Force Login Alert
-![Brute Force Alert](04-Screenshots/Alerts/02-Brute_Force_Login_Detection.png)
+![Brute Force Alert](04-Screenshots/Splunk/Alerts/02-Brute_Force_Login_Detection.png)
 
 ### PowerShell Script Execution Alert
-![PowerShell Alert](04-Screenshots/Alerts/03-PowerShell_Alerts.png)
+![PowerShell Alert](04-Screenshots/Splunk/Alerts/03-PowerShell_Alerts.png)
 
 ### Privilege Escalation Alert
-![Privilege Escalation Alert](04-Screenshots/Alerts/04-Privilege_Escalation.png)
+![Privilege Escalation Alert](04-Screenshots/Splunk/Alerts/04-Privilege_Escalation.png)
 
 ---
 
