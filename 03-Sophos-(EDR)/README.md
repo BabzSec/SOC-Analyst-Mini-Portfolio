@@ -13,9 +13,9 @@ The goal is to demonstrate practical skills in deploying, monitoring, and respon
 ## 🗂️ Contents
 | File / Folder | Description |
 |---------------|-------------|
-| `Sophos-Setup.md` | Step-by-step installation and configuration notes |
-| `Alerts/` | Screenshots of detections, investigations, and responses |
-| `README.md` | (this file) Overview of the Sophos EDR lab |
+| [Sophos-Setup.md](Sophos-Setup.md) | Step-by-step installation and configuration notes |
+| [Alerts](Alerts) | Screenshots of detections, investigations, and responses |
+| [README.md](README.md) | (this file) Overview of the Sophos EDR lab |
 
 ---
 
