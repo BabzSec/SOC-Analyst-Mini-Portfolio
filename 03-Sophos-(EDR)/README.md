@@ -15,6 +15,7 @@ The goal is to demonstrate practical skills in deploying, monitoring, and respon
 |---------------|-------------|
 | [Sophos-Setup.md](Sophos-Setup.md) | Step-by-step installation and configuration notes |
 | [Alerts](Alerts) | Screenshots of detections, investigations, and responses |
+| [Screenshots](Screenshots) | All lab screenshots (dashboard, agent, alerts, investigations) |
 | [README.md](README.md) | (this file) Overview of the Sophos EDR lab |
 
 ---
