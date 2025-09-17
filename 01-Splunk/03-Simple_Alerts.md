@@ -5,7 +5,7 @@ This document summarizes the alerts configured in Splunk for the SOC Analyst Min
 ---
 
 ### 1️⃣ Alert Rules Overview
-![Alert Rules Overview](../04-Screenshots/Alerts/01-Alert_Rules.png)
+![Alert Rules Overview](../04-Screenshots/Splunk/Alerts/01-Alert_Rules.png)
 
 ---
 
@@ -31,7 +31,7 @@ index=* EventCode=4625
   - **Notes:** Thresholds and time windows should be adapted to environment size and security policy.
 
 - **Screenshot:**  
-![Brute Force Alert](../04-Screenshots/Alerts/02-Brute_Force_Login_Detection.png)
+![Brute Force Alert](../04-Screenshots/Splunk/Alerts/02-Brute_Force_Login_Detection.png)
 
 ---
 
@@ -57,7 +57,7 @@ index=wineventlog 4104
   - **Notes:** Filters can be applied to reduce false positives, e.g., exclude trusted admin scripts.
 
 - **Screenshot:**  
-![PowerShell Alert](../04-Screenshots/Alerts/03-PowerShell_Alerts.png)
+![PowerShell Alert](../04-Screenshots/Splunk/Alerts/03-PowerShell_Alerts.png)
 
 ---
 
@@ -84,7 +84,7 @@ index=main EventCode=4672
   - **Notes:** Exclude service accounts or known automated logins if necessary to reduce noise.
 
 - **Screenshot:**  
-![Privilege Escalation Alert](../04-Screenshots/Alerts/04-Privilege_Escalation.png)
+![Privilege Escalation Alert](../04-Screenshots/Splunk/Alerts/04-Privilege_Escalation.png)
 
 ---
 
