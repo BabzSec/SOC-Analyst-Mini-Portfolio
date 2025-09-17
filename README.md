@@ -21,7 +21,7 @@ It contains:
 |---------|-------------|
 | [**Splunk**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/01-Splunk) | Dashboards, reports, and searches (e.g., failed login monitoring, PowerShell detection) |
 | [**Cheatsheets**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/02-Cheatsheets) | Windows Security Event ID cheat sheet and other quick references |
-| [**CrowdStrike**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/03-Sophos (EDR) | (Planned) Incident response & alert investigations |
+| [**Sophos (EDR)**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/03-Sophos-(EDR)) | (Planned) Incident response & alert investigations |
 | [**Screenshots**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/04-Screenshots) | Visual evidence of dashboards, queries, and reports |
 
 ---
