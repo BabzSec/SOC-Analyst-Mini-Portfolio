@@ -10,7 +10,7 @@ This repository is my **SOC Analyst Mini-Portfolio**, created to demonstrate pra
 It contains:
 - 🖥️ Splunk dashboards & reports built from simulated security events  
 - 📄 Windows Security Event ID Cheat Sheet for quick reference  
-- 🚀 Future projects with CrowdStrike & basic threat-hunting labs  
+- 🚀 Future projects with Sophos (EDR) & basic threat-hunting labs  
 
 > 🎯 **Goal:** Show real-world log analysis, alerting, and investigation skills that go beyond theory.
 
