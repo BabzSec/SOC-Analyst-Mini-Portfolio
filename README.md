@@ -10,7 +10,7 @@ This repository is my **SOC Analyst Mini-Portfolio**, created to demonstrate pra
 It contains:
 - 🖥️ Splunk dashboards & reports built from simulated security events  
 - 📄 Windows Security Event ID Cheat Sheet for quick reference  
-- 🚀 Future projects with Sophos (EDR) & basic threat-hunting labs  
+- 🚀 Future projects with LimaCharlie (EDR) & basic threat-hunting labs  
 
 > 🎯 **Goal:** Show real-world log analysis, alerting, and investigation skills that go beyond theory.
 
@@ -21,7 +21,7 @@ It contains:
 |---------|-------------|
 | [**Splunk**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/01-Splunk) | Dashboards, reports, and searches (e.g., failed login monitoring, PowerShell detection) |
 | [**Cheatsheets**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/02-Cheatsheets) | Windows Security Event ID cheat sheet and other quick references |
-| [**Sophos (EDR)**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/03-Sophos-EDR) | (Planned) Incident response & alert investigations |
+| [**LimaCharlie (EDR)**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/03-LimaCharlie-EDR) | (Planned) Incident response & alert investigations |
 | [**Screenshots**](https://github.com/BlueWardRix/SOC-Analyst-Mini-Portfolio/tree/main/04-Screenshots) | Visual evidence of dashboards, queries, and reports |
 
 ---
