@@ -27,8 +27,8 @@ It contains:
 ---
 
 ## 📧 Contact
-- **Email:** [your-email@gmail.com](mailto:your-email@gmail.com)  
-- **GitHub:** [YourGitHubUsername](https://github.com/YourGitHubUsername)
+- **Email:** [BlueWardRix@gmail.com](mailto:your-email@gmail.com)  
+- **GitHub:** [BlueWardRix](https://github.com/YourGitHubUsername)
 
 > Feel free to reach out if you’d like to discuss my work or opportunities in SOC / cybersecurity.
 
