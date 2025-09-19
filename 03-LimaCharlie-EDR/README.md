@@ -20,9 +20,9 @@ It contains:
 | File / Folder | Description |
 |---------------|-------------|
 | [LC-Setup.md](LC-Setup.md) | Step-by-step installation and configuration notes |
-| [01-Alerts.md](01-Alerts.md) | Detection rules, alerts, and scenario documentation |
+| [Alerts.md](Alerts.md) | Detection rules, alerts, and scenario documentation |
 | [README.md](README.md) | (this file) Overview of the LimaCharlie lab |
-| [04-Screenshots](04-Screenshots) | Screenshots of dashboards, queries, and alerts |
+| [Screenshots](04-Screenshots) | Screenshots of dashboards, queries, and alerts |
 
 ---
 
