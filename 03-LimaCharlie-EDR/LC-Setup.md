@@ -23,7 +23,8 @@ This document explains how to set up LimaCharlie on a Windows VM for lab testing
 
 1. In the LimaCharlie console, open **Extensions → Add Extension**.  
 2. Search for `Sigma` and install it.  
-3. Apply it to your organization so its rules are available to your sensor.
+3. Apply it to your organization so its rules are available to your sensor.  
+> 💡 Tip: You may have a few default rules installed, but most detections require the Sigma extension to trigger alerts.
 
 ---
 
@@ -38,9 +39,14 @@ This document explains how to set up LimaCharlie on a Windows VM for lab testing
 
 ## 5️⃣ Verify & Snapshot
 1. Ensure the VM appears healthy and is sending telemetry.  
-2. Take a **snapshot** of this clean state before testing any detections.
+2. Take a **snapshot** of this clean state before testing any detections.  
+> 💡 Tip: Maintaining a clean snapshot allows you to safely test malware or suspicious scripts repeatedly without contaminating the VM.
 
 ---
 
-## 6️⃣ Screenshots
-> (Optional) Capture setup images for your portfolio and store them under:
+## 6️⃣ Additional Setup Tips
+- Keep your lab **isolated** (Host-only network, no shared folders/clipboard).  
+- Ensure **Real-time Scanning** and policy modules are enabled to detect behaviors.  
+- Use safe test files first to validate that alerts trigger correctly before testing any real malware.  
+- Document all configuration changes to include in your portfolio notes.
+
