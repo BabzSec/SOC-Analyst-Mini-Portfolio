@@ -51,8 +51,9 @@ Capture:
 - The process tree or event details.
 - Optionally, the rule page highlighting that it fired.
 
-> 💡 **Tip:** If no alert appears, confirm the rule is enabled, scope includes your host, and NEW_PROCESS events are reaching the cloud.
+![PowerShell Encoded Command Alert](../04-Screenshots/LimaCharlie/Alerts/PowerShell_Encoded_Command_Alert.png)
 
+> 💡 **Tip:** If no alert appears, confirm the rule is enabled, scope includes your host, and NEW_PROCESS events are reaching the cloud.
 
 
 
@@ -72,7 +73,7 @@ Detects when commands or processes are executed with elevated privileges using �
   - References: [Florian Roth / Nextron Systems](https://www.trendmicro.com/en_us/research/22/k/hack-the-real-box-apt41-new-subgroup-earth-longzhi.html)
 
 - **Screenshot:**  
-![Privilege Escalation Alert](04-Screenshots/LimaCharlie-EDR/Alerts/Privilege_Escalation_Alert.png)
+![Privilege Escalation Alert](../04-Screenshots/LimaCharlie/Alerts/Privilege_Escalation_Alert.png)
 
 - **Lab Tip:**  
   - Simulate detection using a safe elevated command:  
