@@ -17,26 +17,11 @@ These serve as the baseline for detections, covering PowerShell abuse, privilege
 
 ---
 
-💡 **Tip:** Always highlight key fields like process name, user, file path, timestamp, and rule triggered.
+### 1️⃣ Malicious / Suspicious File Execution
 
-## 1️⃣ Malware / File Threat Detection
+LimaCharlie detected suspicious or potentially malicious files executed on the isolated lab VM.  
 
-Detects execution of potentially harmful or suspicious files in the VM.
-
-- **Sigma Rule Used:** `malicious_file_execution`  
-- **Description:** Flags execution of known malicious files or lab-generated unsafe test files (e.g., EICAR or benign PE malware in isolated labs).  
-- **Triggered By:** Running a test `.exe` or `.bat` in the isolated VM.  
-
-- **Notes:**  
-  - Always use an isolated VM for testing.  
-  - For portfolio purposes, safe files like EICAR or lab-generated PUAs can be used.  
-  - Focus on endpoint activity: filename, hash, path, timestamp.  
-
-- **Screenshot:**  
-![Malware / File Execution Alert](04-Screenshots/LimaCharlie-EDR/Alerts/Malicious_File_Execution.png)
-
-- **Lab Tip:**  
-  - Run the test file in the VM and capture the alert from LimaCharlie console.  
+> For a **detailed analysis, investigation, and full screenshot workflow**, see [Malware Detection & Analysis](Malware/Malware_Detection.md)
 
 ---
 
