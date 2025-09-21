@@ -108,7 +108,9 @@ Before triggering alerts, the LimaCharlie EDR agent collected telemetry from the
 
 LimaCharlie detected suspicious or potentially malicious files executed on the isolated lab VM.  
 
-> For a **detailed analysis, investigation, and full screenshot workflow**, see [Malware Detection & Analysis](03-LimaCharlie-EDR/Malware_Detection.md)
+> For a **detailed analysis, investigation, and full screenshot workflow**, see [Malware Detection & Analysis](03-LimaCharlie-EDR/Malware/Malware_Detection.md)
+
+---
 
 #### PowerShell Encoded Command Alert
 ![PowerShell Alert](04-Screenshots/LimaCharlie/Alerts/PowerShell_Encoded_Command_Alert.png)
