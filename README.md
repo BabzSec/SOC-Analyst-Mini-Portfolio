@@ -116,7 +116,7 @@ Before triggering alerts, the LimaCharlie EDR agent collected telemetry from the
 ### Suspicious Process Masquerading as SvcHost.exe
 ![Suspicious SvcHost Process Alert](04-Screenshots/LimaCharlie/Alerts/My_Detection_Rule.png)
 
-### Sigma Rules Overview (after installing Sigma Extension)
+### 📜  Sigma Rules Overview (after installing Sigma Extension)
 ![Sigma Rules Enabled](04-Screenshots/LimaCharlie/Dashboards/Sigma_Rules.png)
 
 ---
