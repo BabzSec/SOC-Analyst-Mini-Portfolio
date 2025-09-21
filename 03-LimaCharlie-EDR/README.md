@@ -19,9 +19,10 @@ It contains:
 ## 🗂️ Contents
 | File / Folder | Description |
 |---------------|-------------|
+| [Malware](Malware/Malware_Detection.md) | Demonstrates detection and analysis of real malware executed safely in an isolated lab environment using LimaCharlie |
 | [LC-Setup.md](LC-Setup.md) | Step-by-step installation and configuration notes |
 | [Alerts.md](Alerts.md) | Detection rules, alerts, and scenario documentation |
-| [My Custom Dectection Rule](My_Custom_Detection_Rule.md) |A custom LimaCharlie rule created to avoid false positives|
+| [My Custom Dectection Rule.md](My_Custom_Detection_Rule.md) |A custom LimaCharlie rule created to avoid false positives|
 | [README.md](README.md) | (this file) Overview of the LimaCharlie lab |
 | [Screenshots](../04-Screenshots/LimaCharlie) | Screenshots of dashboards, queries, and alerts |
 
