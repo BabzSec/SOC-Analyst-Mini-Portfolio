@@ -1,5 +1,16 @@
 # LimaCharlie EDR Alerts
 
+
+### 📊 Detection Dashboard Overview
+
+Shows alert trends and event counts in real-time for key Sigma rules.
+
+![Detection Dashboard](../04-Screenshots/LimaCharlie/Dashboards/Dashboard_Overview.png)
+
+---
+
+💡 **Tip:** Always highlight key fields like process name, user, file path, timestamp, and rule triggered.
+
 ## 1️⃣ Malware / File Threat Detection
 
 Detects execution of potentially harmful or suspicious files in the VM.
@@ -80,18 +91,6 @@ Detects when commands or processes are executed with elevated privileges using �
     ```powershell
     Start-Process powershell -ArgumentList "-c whoami"
     ```
-    
----
-
-### 📊 Detection Dashboard Overview
-
-Shows alert trends and event counts in real-time for key Sigma rules.
-
-![Detection Dashboard](../04-Screenshots/LimaCharlie/Dashboards/Dashboard_Overview.png)
-
----
-
-💡 **Tip:** Always highlight key fields like process name, user, file path, timestamp, and rule triggered.
 
 ---
 
