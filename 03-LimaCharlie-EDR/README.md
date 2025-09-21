@@ -22,7 +22,9 @@ It contains:
 | [LC-Setup.md](LC-Setup.md) | Step-by-step installation and configuration notes |
 | [Alerts.md](Alerts.md) | Detection rules, alerts, and scenario documentation |
 | [README.md](README.md) | (this file) Overview of the LimaCharlie lab |
+| [My Custom Dectection Rule](My_Custom_Detection_Rule.md) |A custom LimaCharlie rule created to avoid false positives|
 | [Screenshots](../04-Screenshots/LimaCharlie) | Screenshots of dashboards, queries, and alerts |
+
 
 ---
 
