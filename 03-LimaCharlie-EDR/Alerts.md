@@ -1,11 +1,19 @@
 # LimaCharlie EDR Alerts
 
-
 ### 📊 Detection Dashboard Overview
-
-Shows alert trends and event counts in real-time for key Sigma rules.
+Shows alert trends and event counts in real time for key rules.
 
 ![Detection Dashboard](../04-Screenshots/LimaCharlie/Dashboards/Dashboard_Overview.png)
+
+---
+
+### 📜 Sigma Rules Overview
+After installing the **Sigma Extension**, over 1,500 community-maintained rules were enabled in LimaCharlie.  
+These serve as the baseline for detections, covering PowerShell abuse, privilege escalation, file execution, and more.
+
+![Sigma Rules Enabled](../04-Screenshots/LimaCharlie/Dashboards/Sigma_Rules.png)
+
+> 💡 **Tip:** Keep the Sigma extension updated to benefit from the latest community rules, and disable any that create excessive noise in your lab.
 
 ---
 
