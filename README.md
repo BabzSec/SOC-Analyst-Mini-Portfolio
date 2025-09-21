@@ -78,6 +78,58 @@ These alerts are configured in Splunk to automatically detect suspicious activit
 
 ---
 
+After showcasing the Splunk dashboards and alerts, the portfolio continues with **LimaCharlie** to demonstrate real-time endpoint detection and response capabilities.  
+The following section highlights key alerts and investigation workflows captured on the lab VM using LimaCharlie.
+
+---
+
+## 🖼️ LimaCharlie Screenshots
+---
+
+### 🔍 Detection & Monitoring
+Before triggering alerts, the LimaCharlie EDR agent collected telemetry from the isolated Windows VM. Suspicious behaviors were simulated safely in a lab environment:
+
+- **PowerShell Encoded Command:** Detects PowerShell launched with `-EncodedCommand` or obfuscated payloads.  
+- **Privilege Escalation:** Monitors commands executed with administrative or “RunAs”-like flags.  
+- **Malicious / Suspicious File Execution:** Captures execution of lab-safe malware or potentially unwanted files.
+
+---
+
+### 📊 Detection Dashboard Overview
+![Detection Dashboard](04-Screenshots/LimaCharlie/Dashboards/Dashboard_Overview.png)
+
+> These screenshots demonstrate practical SOC workflows using LimaCharlie: alerting, detection, and endpoint monitoring.
+
+---
+
+### 🚨 Detection Alerts
+
+#### Malicious / Suspicious File Execution Alert
+![Malicious File Alert](04-Screenshots/LimaCharlie-EDR/Alerts/Malicious_File_Execution_Alert.png)
+
+#### PowerShell Encoded Command Alert
+![PowerShell Alert](04-Screenshots/LimaCharlie/Alerts/PowerShell_Encoded_Command_Alert.png)
+
+#### Privilege Escalation Alert
+![Privilege Escalation Alert](04-Screenshots/LimaCharlie/Alerts/Privilege_Escalation_Alert.png)
+
+### Suspicious Process Masquerading as SvcHost.exe
+![Suspicious SvcHost Process Alert](04-Screenshots/LimaCharlie/Alerts/My_Detection_Rule.png)
+
+### Sigma Rules Overview (after installing Sigma Extension)
+![Sigma Rules Enabled](04-Screenshots/LimaCharlie/Dashboards/Sigma_Rules.png)
+
+---
+
+### 💡 Portfolio Tips (LimaCharlie)
+- Add **captions or short notes** for each screenshot explaining what triggered the alert.  
+- Highlight key fields: **process, command-line, user, timestamp, and file path**.  
+- Include **before/after states** to show the detection → investigation → response workflow.  
+- Keep your lab **isolated** and clean — revert VM snapshots after each test.  
+- If using custom or lab-safe malware, indicate clearly in your notes that it’s **safe for testing**.  
+
+---
+
 ## 📧 Contact
 - **Email:** [BlueWardRix@gmail.com](mailto:BlueWardRix@gmail.com)  
 - **GitHub:** [BlueWardRix](https://github.com/BlueWardRix)
