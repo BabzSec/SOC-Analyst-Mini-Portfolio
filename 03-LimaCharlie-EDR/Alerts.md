@@ -19,7 +19,7 @@ These serve as the baseline for detections, covering PowerShell abuse, privilege
 
 ### 1️⃣ Malicious / Suspicious File Execution
 
-LimaCharlie detected suspicious or potentially malicious files executed on the isolated lab VM.  
+LimaCharlie detected real malware executed safely on our isolated lab VM, demonstrating practical EDR detection and endpoint monitoring skills.
 
 > For a **detailed analysis, investigation, and full screenshot workflow**, see [Malware Detection & Analysis](Malware/Malware_Detection.md)
 
